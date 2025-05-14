@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vimukthi's portfolio showcasing skills, projects, and contact information.">
+  <title>Vimukthi Portfolio</title>
+  <!-- Tailwind CSS CDN (for prototyping; consider a custom build in production) -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-blue-100 font-sans leading-relaxed text-gray-800">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-3" aria-label="Main navigation">
+      <div class="flex justify-between items-center">
+        <a href="#home" class="text-2xl font-bold text-blue-600 hover:text-blue-700">Portfolio</a>
+        <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-gray-700 focus:outline-none">
+          <span class="sr-only">Toggle menu</span>
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+        <ul class="hidden md:flex space-x-6 text-gray-700">
+          <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+          <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Mobile menu -->
+      <ul id="mobile-menu" class="mt-2 space-y-2 hidden md:hidden text-gray-700">
+        <li><a href="#home" class="block py-1 hover:text-blue-600">Home</a></li>
+        <li><a href="#skills" class="block py-1 hover:text-blue-600">Skills</a></li>
+        <li><a href="#projects" class="block py-1 hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="block py-1 hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="space-y-20 p-4">
+    <!-- Hero Section -->
+    <section id="home" class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-1/2 fade-element delay-1">
+        <h1 class="text-5xl font-extrabold mb-4">Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Vimukthi (Vi)</span></h1>
+        <p class="text-xl text-gray-700 mb-6">Driven MS MIS Candidate '25 |Business Analytics, Software Engineering, Software Quality Assurance, DevOps & Cloud Enthusiast | Empowering Solutions with Python, Java, SQL & AWS</p>
+        <div class="flex gap-4">
+          <a href="#projects" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View My Work</a>
+          <a href="#contact" class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">Contact Me</a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex flex-col items-center fade-element delay-2">
+        <img src="vimukthi.jpg" alt="Vimukthi profile picture" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg mb-4">
+        
+        <!-- Social Icons -->
+        <div class="flex gap-6">
+          <a href="https://www.linkedin.com/in/vimukthi-habarakada-4ab07b206/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin text-blue-600 text-3xl hover:text-blue-800 transition"></i>
+          </a>
+          <a href="https://github.com/VIMU-K" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github text-gray-800 text-3xl hover:text-black transition"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6 fade-element delay-1">Skills</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <li class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition fade-element delay-2">
+          <i class="fab fa-html5 text-4xl text-orange-600 mb-2"></i>
+          <h3 class="font-semibold mb-1">HTML5</h3>
+          <p class="text-sm text-gray-600">Semantic markup & accessibility</p>
+        </li>
+        <li class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition fade-element delay-2">
+          <i class="fab fa-css3-alt text-4xl text-blue-400 mb-2"></i>
+          <h3 class="font-semibold mb-1">CSS3</h3>
+          <p class="text-sm text-gray-600">Modern layouts & responsive design</p>
+        </li>
+        <li class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition fade-element delay-2">
+          <i class="fab fa-js text-4xl text-yellow-500 mb-2"></i>
+          <h3 class="font-semibold mb-1">JavaScript</h3>
+          <p class="text-sm text-gray-600">Interactive & dynamic UI</p>
+        </li>
+        <li class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition fade-element delay-2">
+          <i class="fab fa-python text-4xl text-blue-500 mb-2"></i>
+          <h3 class="font-semibold mb-1">Python</h3>
+          <p class="text-sm text-gray-600">Scripting & data analysis</p>
+        </li>
+        <li class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition fade-element delay-2">
+          <i class="fab fa-java text-4xl text-red-600 mb-2"></i>
+          <h3 class="font-semibold mb-1">Java</h3>
+          <p class="text-sm text-gray-600">Object-oriented programming</p>
+        </li>
+        <li class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition fade-element delay-2">
+          <i class="fab fa-aws text-4xl text-orange-500 mb-2"></i>
+          <h3 class="font-semibold mb-1">AWS</h3>
+          <p class="text-sm text-gray-600">Cloud infrastructure & services</p>
+        </li>
+        <li class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition fade-element delay-2">
+            <i class="fas fa-database text-4xl text-gray-700 mb-2"></i>
+            <h3 class="font-semibold mb-1">SQL</h3>
+            <p class="text-sm text-gray-600">Relational database management</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6 fade-element delay-1">Featured Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+    
+        <!-- Project 1 -->
+        <article class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition fade-element delay-2">
+          <img src="assets/project1.jpg" alt="E-commerce Website" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">E-commerce Website</h3>
+            <p class="text-gray-600 mb-4">Responsive platform with filtering, cart, and checkout.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">HTML</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">CSS</span>
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">JS</span>
+            </div>
+            <div class="mt-4 flex gap-4">
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Project 2 -->
+        <article class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition fade-element delay-2">
+          <img src="assets/project2.jpg" alt="Data Dashboard" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Data Dashboard</h3>
+            <p class="text-gray-600 mb-4">Analytics dashboard built with Python and Plotly.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Python</span>
+              <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Plotly</span>
+            </div>
+            <div class="mt-4 flex gap-4">
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Project 3 -->
+        <article class="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition fade-element delay-2">
+          <img src="assets/project3.jpg" alt="Portfolio Site" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Portfolio Site</h3>
+            <p class="text-gray-600 mb-4">This responsive site you're viewing right now!</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Tailwind</span>
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">JS</span>
+            </div>
+            <div class="mt-4 flex gap-4">
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </article>    
+      </div>
+    </section>  
+
+    <section id="contact" class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6 fade-element delay-1">Get In Touch</h2>
+    
+      <!-- Contact details -->
+      <div class="flex justify-center gap-12 mb-6 fade-element delay-2">
+        <div class="flex items-center space-x-2 text-gray-700">
+          <i class="fas fa-envelope text-blue-600"></i>
+          <a href="mailto:vimukthikavinda12@gmail.com" class="text-blue-600 hover:underline">vimukthikavinda12@gmail.com</a>
+        </div>
+        <div class="flex items-center space-x-2 text-gray-700">
+          <i class="fas fa-map-marker-alt text-blue-600"></i>
+          <span>Houston, Texas, USA</span>
+        </div>
+      </div>
+    
+      <!-- FORM WRAPPER to control width -->
+      <div class="max-w-2xl mx-auto">
+        <form class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition space-y-4 fade-element delay-3">
+          <label class="block">
+            <span class="text-sm font-medium">Name</span>
+            <input type="text" class="mt-1 block w-full border-gray-300 rounded-lg focus:ring focus:ring-blue-200" required>
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Email</span>
+            <input type="email" class="mt-1 block w-full border-gray-300 rounded-lg focus:ring focus:ring-blue-200" required>
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Message</span>
+            <textarea rows="4" class="mt-1 block w-full border-gray-300 rounded-lg focus:ring focus:ring-blue-200" required></textarea>
+          </label>
+          <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-400 py-8">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm"> © <span id="year"></span> All rights reserved.</p>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="https://www.linkedin.com/in/vimukthi-habarakada-4ab07b206/" class="hover:text-white" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/VIMU-K" class="hover:text-white" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

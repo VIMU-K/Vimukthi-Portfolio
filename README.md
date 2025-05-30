@@ -1,4 +1,4 @@
-🌐 Personal Portfolio Website – Built with HTML, CSS, JavaScript, and Tailwind CSS
+🌐 Personal Portfolio Website, Built with HTML, CSS, JavaScript, and Tailwind CSS
 This responsive and animated portfolio site highlights my technical and creative skills as a Management Information Systems (MIS) candidate. It showcases my background in business analytics, cloud infrastructure, and software development through a clean, modern interface.
 
 ✨ Features:
